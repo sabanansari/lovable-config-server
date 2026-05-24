@@ -1,0 +1,17 @@
+server:
+  port: 9050
+  servlet.context-path: /account
+
+spring:
+  datasource:
+ #   url: jdbc:postgresql://localhost:9010/pgvector-test
+    url: jdbc:postgresql://pgvector-service:9010/lovable-account-db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+stripe:
+  api:
+    secret: sk_test_51Sv87QJg1x1XNzsQTUfJk21MqpTdhqwTpxzhqofJRZYIHGWBDyOCuDjX3o6Dxur9hdZaP4pjsDtHbF0dcFmCVMKN00Ml29mhmx
+  webhook:
+    secret: whsec_22aa056ae2c851791f7c6b01c9c8569c0121dc8485bf5884470ff888a7717aa8
