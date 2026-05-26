@@ -9,10 +9,18 @@ spring:
     username: user
     password: password
     driver-class-name: org.postgresql.Driver
+  # ai:
+  #   openai:
+  #     api-key: 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
+  #     base-url: https://openrouter.ai/api
+  #     chat:
+  #       options:
+  #         model: openai/gpt-5.5
+  #         temperature: 0.0
   ai:
     openai:
       api-key: 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
-      base-url: https://openrouter.ai/api
+      base-url: https://openrouter.ai/api/v1
       chat:
         options:
           model: openai/gpt-5.5
