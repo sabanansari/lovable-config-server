@@ -15,5 +15,5 @@ spring:
       base-url: https://openrouter.ai/api
       chat:
         options:
-          model: openai/gpt-5.3-codex
+          model: deepseek/deepseek-v4-flash
           temperature: 0.0
