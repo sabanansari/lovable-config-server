@@ -11,7 +11,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   ai:
     openai:
-      api-key: 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
+      api-key: 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
       base-url: https://openrouter.ai/api
       chat:
         options:
