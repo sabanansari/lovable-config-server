@@ -25,3 +25,22 @@ spring:
         options:
           model: anthropic/claude-haiku-4.5
           temperature: 0.0
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: k8s
+  datasource:
+    url: jdbc:postgresql://pgvector.lovable-core.svc.cluster.local:5432/intelligence_db
+    username: intelligence_user
+    password: ${DB_PASSWORD}
+
+ai:
+    model.chat: openai
+    openai:
+      api-key: ${AI_API_KEY}
+    chat:
+        options:
+          model: anthropic/claude-haiku-4.5
